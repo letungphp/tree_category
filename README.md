@@ -1,4 +1,4 @@
-# tree_category
+# tree , category , directory , folder manage 
 
 
 Create database and create table
@@ -10,6 +10,7 @@ CREATE TABLE categories (
 );
 
 Create index
+
 ALTER TABLE categories ADD INDEX idx_parent_path (parent_path)
 
 Example Data
@@ -75,3 +76,5 @@ Storage Overhead: The parent_path string can become long and consume more storag
 
 Use Cases
 This adjusted Path Enumeration Model is still suitable for applications where the hierarchy is relatively static and read-heavy. It provides efficient retrieval of entire subtrees but can become cumbersome for applications with frequent updates to the hierarchy.
+
+
